@@ -574,6 +574,19 @@ h1.arrow span {
     color: #E04343;
 }
 /* ==========================================================================About========================================================================== */
+.p-1{
+	padding: .25rem;
+}
+.p-2{
+	padding: .5rem;
+}
+.p-3{
+	padding: .75rem;
+}
+.p-4{
+	padding: 1rem;
+}
+
 .about-image {
 	height:400px;
 	-webkit-background-size:cover;
