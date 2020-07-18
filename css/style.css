@@ -79,7 +79,7 @@ audio,canvas,video {
 	*display:inline;
 	*zoom: 1;
 }
-* Remove excess height in iOS 5 devices. */
+/* Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
 	height:0;
@@ -238,7 +238,7 @@ legend {
 }
 button,input,select,textarea {
 	font-size:100%;
-	/margin:0;
+	margin:0;
 	vertical-align:baseline;
 	*vertical-align:middle;
 }
@@ -453,22 +453,25 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/header-bg.jpg') right bottom no-repeat;
-	background-size: contain;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.747), rgba(255, 255, 255, 0)),
+		url('../img/headshot_3.png') right bottom no-repeat;
+	background-size: cover;
 	padding:110px 0 100px 0;
 	height:auto;
 	background-color: #FBFBFB;
+	
 }
 .hero h1 {
-	font-size: 120px;
+	font-size: 90px;
 	letter-spacing: -8px;
 	margin: 0;
 	font-weight: 600;
 	line-height: 95px;
 	text-transform: uppercase;
+	color:white;
 }
 .hero h1 span {
-	color:#a1a9b0;
+	/* color:#a1a9b0; */
 	/* display:inline-block; */
 }
 .hero h3 {
@@ -477,7 +480,7 @@ table {
 	padding:0;
 	opacity:0.5;
 	color: #E04343;
-	letter-spacing: 18px;
+	letter-spacing: 4px;
 	line-height: 50px;
 	text-transform: uppercase;
 }
@@ -1116,7 +1119,7 @@ ul.slides li {
 	}
 
 	.hero h1 {
-		font-size: 100px;
+		font-size: 73px;
 		line-height: 80px;
 		margin-top: 65px;
 }
@@ -1193,7 +1196,7 @@ ul.slides li {
 	}
 
 	.hero h3 {
-	    letter-spacing: 10px;
+	    letter-spacing: 3px;
 	}
 
 
