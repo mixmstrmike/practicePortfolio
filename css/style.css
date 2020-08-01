@@ -651,11 +651,11 @@ h1.arrow span {
     color: #FFF;
 }
 /* ==========================================================================Services========================================================================== */
-.services {
+.resume {
 	margin-top:80px;
 	margin-bottom:40px;
 }
-.services .icon {
+.resume .icon {
 	position:relative;
 	width:175px;
 	height:175px;
@@ -672,15 +672,18 @@ h1.arrow span {
 	border: 1px solid #E04343;
 	color: #E04343;
 }
-.services .item:hover .icon {
+.resume .icon a {
+	border: none !important;
+}
+.resume .item:hover .icon {
 	background: #E04343;
 	border: 1px solid #E04343;
 }
-.services .item [class*=fa] {
+.resume .item [class*=fa] {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
 }
-.services .item:hover [class*=fa] {
+.resume .item:hover [class*=fa] {
 	-webkit-transform:scale(1.2);
 	transform:scale(1.2);
 	-webkit-transition:all .3s ease-out;
