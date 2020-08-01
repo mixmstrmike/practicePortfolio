@@ -24,6 +24,13 @@
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
+/* @font-face {
+  font-family: 'FontAwesome';
+  src: url('../assets/font-awesome/fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
 a {
 	color: #E04343;
 	-webkit-transition:all 0.5s;
@@ -283,7 +290,10 @@ table {
 }
 /* ==========================================================================Section Styles========================================================================== */
 .section-padding {
-	padding:90px 0 100px
+	padding:70px 0 70px
+}
+.resume-section{
+	padding: 70px 0 0
 }
 .dark-bg {
 	background:#f3f5f8;
@@ -644,11 +654,11 @@ h1.arrow span {
     color: #FFF;
 }
 /* ==========================================================================Services========================================================================== */
-.services {
+.resume {
 	margin-top:80px;
 	margin-bottom:40px;
 }
-.services .icon {
+.resume .icon {
 	position:relative;
 	width:175px;
 	height:175px;
@@ -665,15 +675,18 @@ h1.arrow span {
 	border: 1px solid #E04343;
 	color: #E04343;
 }
-.services .item:hover .icon {
+.resume .icon a {
+	border: none !important;
+}
+.resume .item:hover .icon {
 	background: #E04343;
 	border: 1px solid #E04343;
 }
-.services .item [class*=fa] {
+.resume .item [class*=fa] {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
 }
-.services .item:hover [class*=fa] {
+.resume .item:hover [class*=fa] {
 	-webkit-transform:scale(1.2);
 	transform:scale(1.2);
 	-webkit-transition:all .3s ease-out;
@@ -1265,3 +1278,13 @@ ul.slides li {
 	    padding-bottom: 40px;
 	}
 }
+
+/*testing SVG devicon*/
+/* .devicon-git-plain {
+  max-width: 2em;
+} */
+
+/* if you want to change the original color */
+/* .devicon-git-plain path {
+  fill: #4691f6;
+} */
