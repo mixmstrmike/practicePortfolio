@@ -7,7 +7,8 @@
 	<!-- Website Title -->
     <title>Michael Sandoval - Full Stack Web Developer</title>
     <!-- Font Awesome -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Devicon -->
@@ -573,72 +574,43 @@
               </div>
             </div>
             <div class="row contact-details">
-			  <!-- Adress Box -->
-              <div class="col-md-4">
+			  <!-- Linkedin Box -->
+              <div class="col-md-3">
                 <div class="dark-box box-hover">
-                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                  <p>23 Ipsum street, New York</p>
+                  <h2><i class="fa fa-linkedin-square"></i><span>LinkedIn</span></h2>
+                  <p><a href="https://linkedin.com/in/mlsandoval" target="_blank">linkedin<br>.com</a></p>
                 </div>
               </div>
-			  <!-- Phone Number Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p>+12 345 6789</p>
-                </div>
-              </div>
-			  <!-- E-Mail Box -->
-              <div class="col-md-4">
+        <!-- E-Mail Box -->
+              <div class="col-md-3">
                 <div class="dark-box box-hover">
                   <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                  <p><a href="index.html#">info@themewagon.com</a></p>
+                  <p><a href="mailto: michaelsandoval.resume@gmail.com">michaelsandoval.resume<br>@gmail.com</a></p>
+                </div>
+              </div>
+            
+			  <!-- Resume Box -->
+              <div class="col-md-3">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-file"></i><span>Resume</span></h2>
+                  <p><a href="./resume_michael_sandoval.pdf" target="_blank">Click to open<br>in a new tab</a></p>
+                </div>
+              </div>
+			  <!-- Resume Box -->
+              <div class="col-md-3">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-file"></i><span>Phone</span></h2>
+                  <p><a href="tel:2132628377" >213-<br>262-8377</a></p>
                 </div>
               </div>
             </div>
-			<div class="row">
-			  <!-- Google Maps (Change your Settings below) -->
-			  <div class="col-md-6">
-			    <div id="googlemaps"></div>
-			  </div>
-			  <!-- Contact Form -->
-			  <div class="col-md-6 contact">
-			     <form role="form">
-				            <!-- Name -->
-                            <div class="row">
-                                <div class="col-md-6">
-								    <!-- E-Mail -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-								    <!-- Phone Number -->
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email address">
-                                    </div>
-                                </div>
-                            </div>
-							<!-- Message Area -->
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
-                            </div>
-							<!-- Subtmit Button -->
-                            <button type="submit" class="btn btn-send">
-                                Send message
-                            </button>
-                        </form>
-			  </div>
-			</div>
 			<br>
 			<!-- Social Buttons - use font-awesome, past in what you want -->
             <div class="row">
               <div class="col-md-12">
                 <ul class="social-buttons">
-                  <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
-                  <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
+                  <li><a target="_blank" href="https://linkedin.com/in/mlsandoval" class="social-btn"><i class="fa fa-linkedin"></i></a></li><!-- linkedin -->
                   <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
-				  <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
-				  <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
                 </ul>
               </div>
             </div>
@@ -657,7 +629,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+                <p>michaelsandoval.pro</p>
               </div>
             </div>
           </div>
@@ -684,44 +656,10 @@
 	<!-- Text Rotator -->
 	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
 	<!-- Lightbox.js -->
-    <script src="assets/lightbox/js/lightbox.min.js"></script>
-    <!-- Google Maps --> 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
+  <script src="assets/lightbox/js/lightbox.min.js"></script>
 	<!-- Theme JavaScript Core -->
 	<script src="js/main.js"></script>
 	<script src="js/script.js"></script>
-
-	<!-- GOOGLE MAPS DATA -->
-    <script type="text/javascript">
-    // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-    
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 15,
-                
-                scrollwheel: false,
-
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York 
-
-                // How you would like to style the map. 
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
-            };
-
-            // Get the HTML DOM element that will contain your map 
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('googlemaps');
-
-            // Create the Google Map using out element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-	
-    </script>
 	
 	<!-- TEXT ROTATOR SETTINGS -->
     <script type="text/javascript">
