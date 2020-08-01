@@ -24,6 +24,13 @@
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
+/* @font-face {
+  font-family: 'FontAwesome';
+  src: url('../assets/font-awesome/fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
 a {
 	color: #E04343;
 	-webkit-transition:all 0.5s;
@@ -79,7 +86,7 @@ audio,canvas,video {
 	*display:inline;
 	*zoom: 1;
 }
-* Remove excess height in iOS 5 devices. */
+/* Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
 	height:0;
@@ -238,7 +245,7 @@ legend {
 }
 button,input,select,textarea {
 	font-size:100%;
-	/margin:0;
+	margin:0;
 	vertical-align:baseline;
 	*vertical-align:middle;
 }
@@ -453,22 +460,25 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/header-bg.jpg') right bottom no-repeat;
-	background-size: contain;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.747), rgba(255, 255, 255, 0)),
+		url('../img/headshot_3.png') right bottom no-repeat;
+	background-size: cover;
 	padding:110px 0 100px 0;
 	height:auto;
 	background-color: #FBFBFB;
+	
 }
 .hero h1 {
-	font-size: 120px;
+	font-size: 90px;
 	letter-spacing: -8px;
 	margin: 0;
 	font-weight: 600;
 	line-height: 95px;
 	text-transform: uppercase;
+	color:white;
 }
 .hero h1 span {
-	color:#a1a9b0;
+	/* color:#a1a9b0; */
 	/* display:inline-block; */
 }
 .hero h3 {
@@ -477,7 +487,7 @@ table {
 	padding:0;
 	opacity:0.5;
 	color: #E04343;
-	letter-spacing: 18px;
+	letter-spacing: 4px;
 	line-height: 50px;
 	text-transform: uppercase;
 }
@@ -571,6 +581,32 @@ h1.arrow span {
     color: #E04343;
 }
 /* ==========================================================================About========================================================================== */
+
+.m-1{
+	margin: .25rem;
+}
+.m-2{
+	margin: .5rem;
+}
+.m-3{
+	margin: .75rem;
+}
+.m-4{
+	margin: 1rem;
+}
+.p-1{
+	padding: .25rem;
+}
+.p-2{
+	padding: .5rem;
+}
+.p-3{
+	padding: .75rem;
+}
+.p-4{
+	padding: 1rem;
+}
+
 .about-image {
 	height:400px;
 	-webkit-background-size:cover;
@@ -615,11 +651,11 @@ h1.arrow span {
     color: #FFF;
 }
 /* ==========================================================================Services========================================================================== */
-.services {
+.resume {
 	margin-top:80px;
 	margin-bottom:40px;
 }
-.services .icon {
+.resume .icon {
 	position:relative;
 	width:175px;
 	height:175px;
@@ -636,15 +672,18 @@ h1.arrow span {
 	border: 1px solid #E04343;
 	color: #E04343;
 }
-.services .item:hover .icon {
+.resume .icon a {
+	border: none !important;
+}
+.resume .item:hover .icon {
 	background: #E04343;
 	border: 1px solid #E04343;
 }
-.services .item [class*=fa] {
+.resume .item [class*=fa] {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
 }
-.services .item:hover [class*=fa] {
+.resume .item:hover [class*=fa] {
 	-webkit-transform:scale(1.2);
 	transform:scale(1.2);
 	-webkit-transition:all .3s ease-out;
@@ -1116,7 +1155,7 @@ ul.slides li {
 	}
 
 	.hero h1 {
-		font-size: 100px;
+		font-size: 73px;
 		line-height: 80px;
 		margin-top: 65px;
 }
@@ -1193,7 +1232,7 @@ ul.slides li {
 	}
 
 	.hero h3 {
-	    letter-spacing: 10px;
+	    letter-spacing: 3px;
 	}
 
 
@@ -1236,3 +1275,13 @@ ul.slides li {
 	    padding-bottom: 40px;
 	}
 }
+
+/*testing SVG devicon*/
+/* .devicon-git-plain {
+  max-width: 2em;
+} */
+
+/* if you want to change the original color */
+/* .devicon-git-plain path {
+  fill: #4691f6;
+} */
