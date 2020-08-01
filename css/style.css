@@ -290,7 +290,10 @@ table {
 }
 /* ==========================================================================Section Styles========================================================================== */
 .section-padding {
-	padding:90px 0 100px
+	padding:70px 0 70px
+}
+.resume-section{
+	padding: 70px 0 0
 }
 .dark-bg {
 	background:#f3f5f8;
