@@ -1,5 +1,5 @@
 node_modules
 bower_components
 .DS_Store
-resume.node_modules
+resume.md
 api-creds.js
