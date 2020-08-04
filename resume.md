@@ -1,8 +1,8 @@
-# Eliot Baker
-[eliotbaker.com](https://www.eliotbaker.com) • [github.com/ebaker](https://github.com/ebaker/resume/tree/yara-2020-test-table) • [eliot.resume@gmail.com](mailto:eliot.resume@gmail.com)
+# Michael Sandoval
+[michaelsandoval.pro](https://michaelsandoval.pro) • [github.com/mlsandoval](https://github.com/mlsandoval/resume/tree/master) • [michaelsandoval.resume@gmail.com](mailto:michaelsandoval.resume@gmail.com)
 
 ## Objective
-To contribute to an agile team focused on developing responsive web applications utilizing the latest JavaScript, HTML, & CSS technologies.
+To learn contribute to an agile team focused on developing responsive web applications utilizing the latest JavaScript, HTML, & CSS technologies.
 
 ## Experience
 
