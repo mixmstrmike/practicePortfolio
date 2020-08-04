@@ -45,12 +45,12 @@
 				<nav class="menu">
 				    <!-- Menu Links -->
 					<div class="icon-list">
-						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-						<a href="index.html#resume"><i class="fa fa-fw fa-file"></i><span>Resume</span></a>
-						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
-						<a href="index.html#skills"><i class="fa fa-fw fa-terminal"></i></i><span>Skills</span></a>
-						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+						<a onclick="closeMenu()" id="nav-icon" href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a onclick="closeMenu()" id="nav-icon" href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+						<a onclick="closeMenu()" id="nav-icon" href="index.html#resume"><i class="fa fa-fw fa-file"></i><span>Resume</span></a>
+						<a onclick="closeMenu()" id="nav-icon" href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+						<a onclick="closeMenu()" id="nav-icon" href="index.html#skills"><i class="fa fa-fw fa-terminal"></i></i><span>Skills</span></a>
+						<a onclick="closeMenu()" id="nav-icon" href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
 					</div>
 				</nav>
 			    </div>
@@ -104,9 +104,12 @@
               <div class="col-md-8 col-md-offset-2 offset-md-2 wp1">
                 <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
 				<!-- about / welcome text -->
-                <p>I'm a tech enthusiast and entertainment professional turned full stack developer. 
-                  <br>When I felt entertainment work wasn't bringing me fulfillment, I reassessed what it was I truly enjoyed and excelled at. What I found was: I value learning and growth via my career, I desire to build/create, and I love computers. Moving into software engineering was a perfect solution.
-                  <br>I'm never more content than when I'm running head first into a new programming challenge and I'm working on with a team to achieve something great. I bring excellent communication, hard work, and compassion to any environment I enter.</p>
+                <p>I'm a tech enthusiast, former professional gamer, and entertainment professional turned full stack developer. 
+                  <br>At some point, everyone must consider if they feel their career brings fulfillment, and if not, what they should do about it. After years in entertainment, I found coming home each night felt quite empty. So, I reassessed what it was I truly enjoyed and excelled at. What I concluded was: I value learning and growth via my career, I desire to build/create, and I love computers. So I became a <a href="https://www.hoorayfoods.com/">hand model</a>. It didn't work out. My fingers were more suited to the smooth linear punch of MX Cherry Browns than to the glitz and glamour of the hand modeling industry.
+                  <br>
+                  <br>Software engineering turned out to be a better solution.
+                  <br>
+                  <br>I'm never more content than when I'm running head first into a new programming challenge and I'm working with a team to achieve something greater than any of us could do alone. I bring excellent communication, hard work, and compassion to any environment I enter. If your company values align and you need a full stack developer, I would love to talk!</p>
               </div>
             </div>
           </div>
@@ -578,7 +581,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <p>michaelsandoval.pro</p>
+                <a href="http://michaelsandoval.pro"><p>michaelsandoval.pro</p></a>
               </div>
             </div>
           </div>
@@ -616,6 +619,10 @@
       separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
       speed: 2300 // How many milliseconds until the next word show.
     });
+
+    function closeMenu(){
+      $('body').removeClass('show-menu')
+    }
     </script>
     </body>
 </html>
