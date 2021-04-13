@@ -1,5 +1,7 @@
-# JohnDoe
-A Responsive Free One Page Portfolio Website template
+# Michael Sandoval
+My personal portfolio site
+
+[michaelsandoval.pro](http://michaelsandoval.pro)
 
 
 
